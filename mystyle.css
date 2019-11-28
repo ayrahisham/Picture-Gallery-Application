@@ -1,0 +1,401 @@
+#banner {
+    background-color:#FCF9F9;
+    margin: 0px 0 0px 0;
+    padding: 20px;
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-image: url('./images/gallerybanner.png');
+    background-position: center;  
+} 
+
+#welcome {
+    top: 10px;
+    left: 10px;
+    margin: 10px 0 10px 0;
+    padding: 20px;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.lbutton 
+{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+}
+
+.lbutton:hover 
+{
+    opacity: 0.8;
+}
+
+.cancelbtn 
+{
+    background-color: #f44336;
+     color: white;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+}
+
+.cancelbtn:hover 
+{
+    opacity: 0.8;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+span.psw 
+{
+    padding-top: 16px;
+}
+
+.contactus
+{
+    font-family: courier;
+    color: darkslategrey;
+}
+
+.contactform
+{
+    font-family: stencil;
+    color: black;
+    font-size: 30px;
+    text-align: left;
+    margin: 10px;
+}
+
+.title
+{
+    font-family: stencil;
+    color: lightslategrey;
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+}
+
+.loginform
+{
+    background-image: url(./images/loginbackground.jpg);
+    background-repeat: round;
+    width: 1200px;
+    height: 700px;
+    font-family: stencil;
+    color: darkslategrey;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+    border: 3px solid #f1f1f1;
+    padding: 16px;
+}
+
+.registerform
+{
+    background-image: url(./images/registerbackground.jpg);
+    background-repeat: round;
+    width: 1200px;
+    height: 700px;
+    font-family: stencil;
+    color: darkslategrey;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+    border: 3px solid #f1f1f1;
+    padding: 16px;
+}
+
+.avatar
+{
+    float: right;
+    margin: 10px -350px 12px 0;
+    width: 60%;
+    border-radius: 50%;
+}
+
+.intro
+{
+    font-family: broadway;
+    font-size: 20px;
+    color: gray;
+    left: 50px;
+    bottom: 10px;
+    text-align: center;
+}
+
+.topmenu 
+{
+    background-color: black;
+    overflow: hidden;
+}
+
+.topmenu a 
+{
+    font-family: broadway;
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topmenu a:hover 
+{
+    background-color: lightgrey;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topmenu a.active 
+{
+    background-color: darkgray;
+    color: white;
+}
+
+.error
+{
+    font-family: bookman;
+    font-size: 30px;
+    color: white;
+    left: 50px;
+    bottom: 10px;
+    border: inset;
+    border-color: darkgray;
+    background-color: darkgrey;
+    text-align: center;
+}
+
+* 
+{
+  box-sizing: border-box;
+}
+
+.row > .column 
+{
+  padding: 0 8px;
+}
+
+.row:after 
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column 
+{
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal 
+{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content 
+{
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close 
+{
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus 
+{
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides 
+{
+  display: none;
+}
+
+.cursor 
+{
+  cursor: pointer
+}
+
+/* Next & previous buttons */
+.prev,
+.next 
+{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next 
+{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover 
+{
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext 
+{
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img 
+{
+  margin-bottom: -4px;
+}
+
+.caption-container 
+{
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo 
+{
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover 
+{
+  opacity: 1;
+}
+
+img.hover-shadow 
+{
+  transition: 0.3s
+}
+
+.hover-shadow:hover 
+{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.text
+{
+    font-family: monospace;
+    font-size: 25px;
+    color: black;
+    left: 50px;
+    bottom: 10px;
+    background-image: url('./images/aboutbackground.jpg');
+    text-align: center;
+}  
+
+.foot
+{
+    font-family: courier;
+    font-size: 20px;
+    color: darkslategray;
+}
